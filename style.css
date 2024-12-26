@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins is applied globally */
+}
+
+body {
+    font-size: 16px;
+    background-color: #111;
+    color: rgb(255,255,255);
+    margin: 0;
+    padding-top: 80px; /* Adjusted padding to ensure proper spacing */
+    font-family: 'Poppins', sans-serif; /* Explicitly added Poppins font here */
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    background: transparent;
+    padding: 1rem 3%;
+    height: 0.5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative; /* Makes header scroll with content */
+    top: 0; /* Ensures it starts at the top */
+    left: 0;
+    z-index: 1000; /* Keeps the header above other elements */
+    display: flex;
+    justify-content: space-between; /* Aligns the items on the left and right */
+    align-items: center; /* Vertically aligns the items */
+    margin-top: 0px; /* Adjust this value to place the header below the bookmark */
+}
+
+/* Bookmark Section (if applicable) */
+.bookmark {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px; /* Set to the height of your bookmark */
+    background-color: #111; /* Adjust color */
+    z-index: 999; /* Keeps it above other content */
+}
+
+/* Section Styling to avoid overlap with header */
+section {
+    padding: 5rem 3%; /* Padding to ensure sections don't overlap */
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Ensure scrolling content doesn't hide behind the header */
+#home {
+    margin-top: 70px; /* Give space to the first section */
+}
+
+/* Add padding to body to ensure content doesn't hide behind the fixed header */
+body {
+    padding-top: 80px; /* Adjust this to match header height */
+}
+
+/* Section Styling to avoid overlap with fixed header */
+section {
+    padding: 5rem 3%; /* Padding to ensure sections don't overlap */
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Ensure scrolling content doesn't hide behind header */
+#home {
+    margin-top: 80px; /* Give space to the first section */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start; /* Aligns the nav items to the left */
+    gap: 2rem;
+}
+
+nav a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #b74b4b;
+    border-bottom: 2px solid #b74b4b;
+}
+
+body {
+    margin: 0;
+    padding-top: 70px; /* Give space so the content doesn't hide behind the fixed header */
+}
+
+section {
+    padding: 5rem 3%; /* Padding to ensure sections don't overlap */
+    margin-top: 0; /* Remove the top margin */
+    max-width: 1200px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+nav a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(250, 241, 241);
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #b74b4b;
+    border-bottom: 2px solid #b74b4b;
+}
+
+/* Section Styling */
+section {
+    padding: 5rem 3%; /* Padding to make sure sections don't overlap */
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 80px; /* Added margin-top to prevent overlap with the fixed header */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #b74b4b;
+    font-family: 'Poppins', sans-serif; /* Explicitly added Poppins font here */
+}
+
+/* About Section */
+.about {
+    padding: 5rem 3%;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 80px;
+}
+
+/* About Me Box */
+.about-me-box {
+    background: #222;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    margin-top: 2rem;
+}
+
+.about-me-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #b74b4b;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-me-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    gap: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+/* Enlarged text styling */
+.home-content h1 {
+    font-size: 4rem; /* Increased font size for the main heading */
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-content h3 {
+    font-size: 2.5rem; /* Increased font size for the subheading */
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-content p {
+    font-size: 1.5rem; /* Increased font size for the paragraph */
+    max-width: 800px; /* Adjusted max width for better readability */
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Home Section Image */
+.home-img img {
+    width: 500px; /* Increased the width */
+    height: 500px; /* Kept the height same as width for a circle */
+    border-radius: 50%; /* Keeps the image circular */
+    box-shadow: 0 0 35px rgba(183, 75, 75, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(-20px); /* Moves the image upwards */
+    margin-left: 100px; /* Adds space between the image and the text */
+}
+
+.home-img img:hover {
+    transform: translateY(-20px) scale(1.05); /* Keeps the upward movement on hover */
+    box-shadow: 0 0 50px rgba(183, 75, 75, 1);
+}
+
+/* Hire Me Button */
+.hire-me-button {
+    background-color: #b74b4b;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.hire-me-button:hover {
+    background-color: #a73b3b;
+    transform: scale(1.05);
+}
+
+/* Skills Section */
+.skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 0;
+}
+
+.skills li {
+    padding: 1rem;
+    background: #222;
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skills li:hover {
+    transform: scale(1.05);
+    background-color: #b74b4b; /* Highlight the item on hover */
+}
+
+/* Projects Section */
+.projects .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.projects .project {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects .project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Light shadow on hover */
+}
+
+/* Contact Section */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+    background: #222;
+    color: white;
+    transition: border 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border: 1px solid #b74b4b; /* Highlight input on focus */
+}
+
+.contact button {
+    align-self: flex-start;
+    padding: 1rem 2.5rem;
+    background: #b74b4b;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact button:hover {
+    background: white;
+    color: #b74b4b;
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+/* Footer Section */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .social-links {
+    margin: 1rem 0;
+}
+
+footer .social-links a {
+    font-size: 2rem; /* Adjust the size of icons */
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #b74b4b; /* Change color on hover */
+}
+
+/* Optional: Icon size adjustments */
+footer .social-links a i {
+    font-size: 2rem; /* Adjust size as needed */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    footer .social-links a {
+        font-size: 1.5rem; /* Smaller icons on mobile */
+    }
+}
